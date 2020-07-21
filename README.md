@@ -9,6 +9,10 @@ When running the script in an empty folder, it will download the windows or linu
 It will then create a new CA if none is found in the directory and start issuing node certificates as requested.
 The key is that the output is a single config file as I am too lazy to move 4 files to every node manually (ca.crt, node.crt, node,key and config.yml). In this case the certificates are embedded in the config file.
 
+        mkdir nebula; cd $_
+        wget https://raw.githubusercontent.com/geragcp/nebula-config-manager/master/generator.py
+        python3 generator.py -h
+
 Here is an example:
 Download the python script into an empty folder. Open the file in your favorite editor and edit the variables at the top of the file. 
 
@@ -57,7 +61,7 @@ The script does not adjust any of the default security settings, however the opt
       -subnets SUBNETS      specify the subnets for the new node)
       -groups GROUPS        specify the groups for the new node)
       -lighthouse LIGHTHOUSE
-                            Set to True if this node is a lighthouse.)
+                            Set to True if this node is a lighthouse.
     
 For example:
 
