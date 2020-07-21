@@ -48,7 +48,7 @@ The script does not adjust any of the default security settings, however the opt
     Platform is: linux
     usage: generator.py [-h] -name NAME [-ip IP] [-subnets SUBNETS] [-groups GROUPS] [-lighthouse LIGHTHOUSE]
     
-    Optional app description
+    Nebula config file generator
     
     optional arguments:
       -h, --help            show this help message and exit
