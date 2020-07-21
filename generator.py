@@ -183,6 +183,10 @@ def main():
         elif 'am_lighthouse:' in line:
             if args.lighthouse:
                 newfile.append('  am_lighthouse: true')
+                newfile.append('  serve_dns: true')
+                newfile.append('  dns:')
+                newfile.append('    host: ' + client_ip.split('/')[0])
+                newfile.append('    port: 5353')
             else:
                 newfile.append('  am_lighthouse: false')
         elif 'hosts:' in line:
