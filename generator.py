@@ -68,7 +68,6 @@ def main():
     cert_ips = list()
     files = [f for f in glob.glob("*.crt")]
     for f in files:
-        # print(f)
         if not "ca.crt" in f:
             if my_platform == "windows":
                 output = subprocess.check_output(["nebula-cert.exe", "print", "-json", "-path", f])
@@ -142,13 +141,10 @@ def main():
 
     with open('ca.crt', 'r') as myfile:
         ca_cert = myfile.read().split('\n')
-        # print(ca_cert)
     with open(client_name + '.crt', 'r') as myfile:
         client_cert = myfile.read().split('\n')
-        # print(client_cert)
     with open(client_name + '.key', 'r') as myfile:
         client_key = myfile.read().split('\n')
-        # print(client_key)
 
     # Now let's create a list containing the new config file
     newfile = list()
@@ -156,7 +152,6 @@ def main():
     newfile.append('# Nebula IP: ' + client_ip)
     for x in range(0, len(my_list)):
         line = my_list[x]
-        # print(line)
         if "ca: /etc/nebula/ca.crt" in line:
             newfile.append("  ca: |")
             for line in ca_cert:
