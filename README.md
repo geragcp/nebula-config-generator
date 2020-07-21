@@ -62,7 +62,7 @@ The script does not adjust any of the default security settings, however the opt
       -subnets SUBNETS      specify the subnets for the new node)
       -groups GROUPS        specify the groups for the new node)
       -lighthouse LIGHTHOUSE
-                            Set to True if this node is a lighthouse.
+                            Set this to True if this node is a lighthouse.
     
 For example:
 
