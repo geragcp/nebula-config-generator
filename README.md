@@ -59,3 +59,6 @@ The script does not adjust any of the default security settings, however the opt
       -lighthouse LIGHTHOUSE
                             Set to True if this node is a lighthouse.)
     
+For example:
+`python3 generator.py -name "host6.nebula" -ip "192.168.22.22/24" -subnets 192.168.254.0/24,192.168.255.0/24 -groups red,blue`
+
