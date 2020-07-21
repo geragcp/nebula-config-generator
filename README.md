@@ -67,3 +67,4 @@ For example:
 
 `python3 generator.py -name host6.nebula -ip 192.168.22.22/24 -subnets 192.168.254.0/24,192.168.255.0/24 -groups red,blue`
 
+Finally, once the config file is moved to the node, the security settings can be adjusted as required. 
