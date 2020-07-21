@@ -201,6 +201,11 @@ def main():
             newfile.append('    #- route: 0.0.0.0/0')
             newfile.append('    #  via: ' + lighthouse_ip[0])
         elif '- port: 443' in line:
+            newfile.append('#    - port: 443')
+            newfile.append('#      proto: tcp')
+            newfile.append('#      groups:')
+            newfile.append('#        - laptop')
+            newfile.append('#        - home')
             break
         else:
             newfile.append(line)
