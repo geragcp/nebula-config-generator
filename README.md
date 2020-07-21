@@ -15,6 +15,7 @@ The key is that the output is a single config file as I am too lazy to move 4 fi
 
 Here is an example:
 Download the python script into an empty folder. Open the file in your favorite editor and edit the variables at the top of the file. 
+At minimum, replace my_fist_lighthouse with the public IP of your lighthouse.
 
         # lighthouse_url=["lighthouse1.com:4242", "lighthouse2.com:8080"]
         lighthouse_url = ["my_fist_lighthouse.com:4242"]
