@@ -63,7 +63,7 @@ def main():
                         # default="red, blue",
                         )
     parser.add_argument("-lighthouse", type=bool,
-                        help="specify the groups for the new node)",
+                        help="Set this to True if this node is a lighthouse.",
                         default=False,
                         )
 
