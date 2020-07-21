@@ -59,8 +59,8 @@ The script does not adjust any of the default security settings, however the opt
       -h, --help            show this help message and exit
       -name NAME            specify the name for the new node
       -ip IP                specify the IP for the new node
-      -subnets SUBNETS      specify the subnets for the new node)
-      -groups GROUPS        specify the groups for the new node)
+      -subnets SUBNETS      specify the subnets for the new node
+      -groups GROUPS        specify the groups for the new node
       -lighthouse LIGHTHOUSE
                             Set this to True if this node is a lighthouse.
     
