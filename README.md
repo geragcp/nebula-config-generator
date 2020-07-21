@@ -39,7 +39,7 @@ Once adjusted to your liking, the first node can be created with:
 
 This will create a file named: 192.168.22.1-lighthouse.nebula.yml which is now the first lighthouse node and can be started with:  
 
-`sudo ./nebula -config 192.168.22.1-lighthouse.nebula.yml for example.`
+`sudo ./nebula -config 192.168.22.1-lighthouse.nebula.yml` for example.
 
 To add nodes, the script can be run again like this: 
 
