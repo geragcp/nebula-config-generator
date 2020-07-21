@@ -53,12 +53,12 @@ def main():
                         # default="192.168.22.11/24",
                         )
     parser.add_argument("-subnets", type=str,
-                        help="specify the subnets for the new node)",
+                        help="specify the subnets for the new node",
                         default="",
                         # default="0.0.0.0/0,192.168.254.0/24,192.168.255.0/24",
                         )
     parser.add_argument("-groups", type=str,
-                        help="specify the groups for the new node)",
+                        help="specify the groups for the new node",
                         default="",
                         # default="red, blue",
                         )
