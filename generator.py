@@ -11,23 +11,23 @@ def main():
     ###
     ### NEED TO EDIT VALUES BELOW TO MATCH YOUR NETWORK ###
     ###
-    
+	
     # lighthouse_url=["lighthouse1.com:4242", "lighthouse2.com:8080"]
     lighthouse_url = ["my_fist_lighthouse.com:4242"]
-    
+	
     # lighthouse_ip=["192.168.22.1", "192.168.22.2"]
     lighthouse_ip = ["192.168.22.1"]
-    
+	
     # Required: name of the certificate authority
     ca_name = "My super awesome Nebula CA"
-    
+	
     # The internal network for the nebula Mesh to use
     network = IPv4Network('192.168.22.0/24')
-    
+	
     # Reserved addresses for lighthouse and such that we don't use for nodes
     reserved_ips = {'192.168.22.1', '192.168.22.2', '192.168.22.3', '192.168.22.4', '192.168.22.5',
                     '192.168.22.6', '192.168.22.7', '192.168.22.8', '192.168.22.9', '192.168.22.10'}
-    
+	
     ###
     ### END OF NEED TO EDIT !!! ###
     ###
@@ -40,7 +40,7 @@ def main():
     print("Platform is: " + my_platform)
 
     # Parsing commandline arguments
-    parser = argparse.ArgumentParser(description='Optional app description')
+    parser = argparse.ArgumentParser(description='Nebula config file generator')
 
     parser.add_argument("-name", type=str,
                         help="specify the name for the new node",
