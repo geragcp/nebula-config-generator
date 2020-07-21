@@ -40,7 +40,7 @@ To add nodes, the script can be run again like this:
 
 `python3 generator.py -name client1.nebula -groups red,blue`
 
-It will evaluate the existsing and reserved IP addresses and assign the next available one. 
+It will evaluate the existsing and reserved IP addresses and assign the next available one. (In this case .11)
 
 The script does not adjust any of the default security settings, however the options for the certificates are available. 
 
