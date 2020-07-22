@@ -10,7 +10,7 @@ It will then create a new CA if none is found in the directory and start issuing
 The key is that the output is a single config file as I am too lazy to move 4 files to every node manually (ca.crt, node.crt, node,key and config.yml). In this case the certificates are embedded in the config file.
 
         mkdir nebula; cd $_
-        wget https://raw.githubusercontent.com/geragcp/nebula-config-manager/master/generator.py
+        wget https://raw.githubusercontent.com/geragcp/nebula-config-generator/master/generator.py
         python3 generator.py -h
 
 Here is an example:
