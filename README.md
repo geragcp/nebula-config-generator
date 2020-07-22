@@ -1,4 +1,4 @@
-# nebula-config-manager
+# nebula-config-generator
 Creates basic Nebula config files with embedded certificates
 
 ### Tool for Nebula VPN:  https://github.com/slackhq/nebula
